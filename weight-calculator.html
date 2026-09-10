@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metal Weight Calculator — Copper &amp; Brass | Aksa Metals</title>
+  <meta name="description" content="Free copper and brass weight calculator. Work out the weight of circles, sheets, strips, rods, tubes and wire in seconds, then send the result straight to a quote request." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="calc">
+  <div id="app-header"></div>
+
+  <!-- ══════════════════════════ HEADER ══════════════════════ -->
+  <section class="section-tight" style="padding-bottom:26px">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb" style="color:var(--ink-faint)">
+        <a href="index.html" style="color:var(--ink-muted)">Home</a>
+        <span>/</span><span>Weight Calculator</span>
+      </nav>
+      <span class="eyebrow">Free Tool</span>
+      <h1 style="font-size:clamp(2.1rem,4.6vw,3.2rem)">Metal Weight Calculator</h1>
+      <p class="lede mt-2">
+        Pick the alloy, choose the shape, type in the dimensions. The weight appears as you
+        type — and the quote button carries the exact specification across to WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ CALCULATOR ══════════════════════ -->
+  <section style="padding-bottom:76px">
+    <div class="container">
+      <div class="calc-shell">
+
+        <!-- ---- Inputs ---- -->
+        <div class="calc-panel reveal">
+
+          <div class="calc-step">
+            <div class="calc-label"><span class="calc-num">1</span> Choose the alloy</div>
+            <div class="seg seg-metal" id="metalSeg"></div>
+          </div>
+
+          <div class="calc-step">
+            <div class="calc-label"><span class="calc-num">2</span> Choose the shape</div>
+            <div class="seg" id="shapeSeg"></div>
+          </div>
+
+          <div class="calc-step">
+            <div class="calc-label"><span class="calc-num">3</span> Enter the dimensions</div>
+            <div id="dimFields"></div>
+          </div>
+
+          <div class="calc-step">
+            <div class="calc-label"><span class="calc-num">4</span> How many pieces?</div>
+            <div class="field" style="margin-bottom:0">
+              <input type="number" id="qty" value="1" min="1" step="1" inputmode="numeric" aria-label="Quantity" />
+            </div>
+          </div>
+
+          <div class="flex mt-3">
+            <button class="btn btn-ghost btn-sm" id="resetCalc" type="button">Clear</button>
+            <span class="small muted" style="margin-left:auto">Nothing is sent anywhere — this runs in your browser.</span>
+          </div>
+        </div>
+
+        <!-- ---- Result ---- -->
+        <div class="calc-result reveal">
+          <div class="calc-result-label">Estimated Total Weight</div>
+          <div class="calc-value" id="resultValue">—</div>
+          <div class="calc-detail" id="resultDetail">Enter the dimensions to see the weight</div>
+
+          <div class="calc-secondary">
+            <div><span>Per piece</span><b id="calcPerPiece">—</b></div>
+            <div><span>Quantity</span><b id="calcQty">1 pc</b></div>
+            <div><span>Material</span><b id="calcAlloy">Copper ETP</b></div>
+          </div>
+
+          <div class="calc-actions">
+            <a class="btn btn-whatsapp btn-block" id="quoteFromCalc" target="_blank" rel="noopener" href="#">
+              Get a Quote for This
+            </a>
+            <button class="btn btn-ghost-light btn-block" id="copyResult" type="button" disabled>
+              Copy Result
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ HOW IT WORKS ══════════════════════ -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>No magic — just volume times density.</h2>
+        <p class="lede mt-1">
+          Every figure here comes from the same arithmetic your own estimator would do.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="card-num">01</div>
+          <h3>Work out the volume</h3>
+          <p>From the shape and your dimensions — a circle is π r² × thickness, a sheet is
+             length × width × thickness, and so on.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-num">02</div>
+          <h3>Multiply by density</h3>
+          <p>Copper is 8.96 g/cm³. Brass runs 8.39–8.53 depending on the zinc content, which is
+             why choosing the right alloy above matters.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-num">03</div>
+          <h3>Multiply by quantity</h3>
+          <p>Per-piece weight times the number of pieces, then converted to grams, kilograms or
+             tonnes automatically.</p>
+        </div>
+      </div>
+
+      <div class="note mt-4 reveal">
+        <span class="note-icon">✱</span>
+        <div>
+          <b>This is an estimate.</b> Real weight varies slightly with rolling tolerance, edge
+          trim and surface finish — usually well under 2%. For invoicing we weigh the actual
+          consignment. Use this for planning and budgeting, not for final billing.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ SHAPE GUIDE ══════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Reference</span>
+        <h2>Which shape should I pick?</h2>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr><th>Shape</th><th>You enter</th><th>Use it for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Circle</td><td>Diameter, thickness</td><td>Round blanks and discs for pressing or spinning</td></tr>
+            <tr><td>Sheet / Plate</td><td>Length, width, thickness</td><td>Flat rectangular pieces of any gauge</td></tr>
+            <tr><td>Strip / Coil</td><td>Length in metres, width, thickness</td><td>Long continuous material — coil or slit strip</td></tr>
+            <tr><td>Rod / Bar</td><td>Diameter, length in metres</td><td>Solid round sections</td></tr>
+            <tr><td>Tube / Pipe</td><td>Outer diameter, wall thickness, length</td><td>Hollow round sections</td></tr>
+            <tr><td>Wire</td><td>Diameter, length in metres</td><td>Fine round sections in long lengths</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid grid-2 mt-4">
+        <div class="card reveal">
+          <h3>A worked example</h3>
+          <p class="mt-2">
+            A copper circle, 300 mm diameter, 0.8 mm thick:
+          </p>
+          <div class="mt-2" style="background:var(--paper-warm); border-radius:var(--radius-sm); padding:16px; font-family:ui-monospace,'Cascadia Code',Consolas,monospace; font-size:.84rem; line-height:1.9">
+            π × (30 ÷ 2)² × 0.08 cm<br />
+            = 56.55 cm³<br />
+            × 8.96 g/cm³<br />
+            = <b>506.7 g</b> per piece
+          </div>
+          <p class="mt-2 small muted">Type those numbers in above and you should see the same figure.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Planning an order?</h3>
+          <p class="mt-2">
+            Once you have the weight, multiply by the day's metal rate for a rough material cost.
+            Copper and brass are quoted per kilogram and the rate moves daily — so for anything
+            you are actually going to buy, ask us for a firm figure.
+          </p>
+          <div class="flex mt-3">
+            <a class="btn btn-primary btn-sm" href="contact.html">Get a Firm Quote</a>
+            <a class="btn btn-ghost btn-sm" href="specifications.html">See Specifications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ CTA ══════════════════════ -->
+  <section class="section-tight" style="padding-bottom:92px">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Prefer to just talk it through?</h2>
+          <p>Tell us what you are making and we will work out the material and quantity with you.</p>
+        </div>
+        <div class="flex">
+          <a class="btn btn-whatsapp btn-lg"
+             data-wa="Hello Aksa Metals, I need help working out the material for a job. ">WhatsApp Us</a>
+          <a class="btn btn-ghost-light btn-lg" data-tel href="#">Call Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="copied-toast" id="copiedToast">Copied to clipboard</div>
+
+  <div id="app-footer"></div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/assistant.js"></script>
+</body>
+</html>

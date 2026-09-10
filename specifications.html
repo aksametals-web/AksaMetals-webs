@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Specifications — Aksa Metals</title>
+  <meta name="description" content="Technical specifications for Aksa Metals copper and brass products: thickness, width, alloy grades, tempers, tolerances, density and applicable IS, ASTM and BS EN standards." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="specs">
+  <div id="app-header"></div>
+
+  <!-- ══════════════════════════ HERO ══════════════════════ -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <img src="assets/img/inspection.jpg" alt="" loading="eager" width="1500" height="1000" />
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Specifications</span>
+      </nav>
+      <h1>Product Specifications</h1>
+      <p class="lede">
+        Dimensions, grades, tempers and tolerances for everything we roll —
+        with the standards each one is worked to.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ SECTION NAV ══════════════════════ -->
+  <nav class="pill-nav" aria-label="Specification sections">
+    <div class="container pill-nav-inner">
+      <a href="#copper-specs">Copper</a>
+      <a href="#brass-specs">Brass</a>
+      <a href="#alloys">Alloy Reference</a>
+      <a href="#tolerances">Tolerances</a>
+      <a href="#density">Density &amp; Properties</a>
+      <a href="#standards">Standards</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════ COPPER SPECS ══════════════════════ -->
+  <section class="section" id="copper-specs">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Copper</span>
+        <h2>Copper Specifications</h2>
+        <p class="lede mt-1">
+          Ranges below are the limits of what we roll. Anything in between is available to order.
+        </p>
+      </div>
+      <div id="copperSpecTables"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ BRASS SPECS ══════════════════════ -->
+  <section class="section alt" id="brass-specs">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Brass</span>
+        <h2>Brass Specifications</h2>
+        <p class="lede mt-1">
+          Alloy choice matters more in brass than in copper — it decides formability,
+          machinability and corrosion behaviour.
+        </p>
+      </div>
+      <div id="brassSpecTables"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ ALLOY REFERENCE ══════════════════════ -->
+  <section class="section" id="alloys">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Alloy Reference</span>
+        <h2>Which grade does what.</h2>
+        <p class="lede mt-1">
+          A short guide to the grades we work with and where each one belongs.
+        </p>
+      </div>
+
+      <h3 class="mb-2 reveal">Copper grades</h3>
+      <div class="table-wrap reveal mb-3">
+        <table>
+          <thead>
+            <tr><th>Grade</th><th>Also called</th><th>Purity</th><th>Character</th><th>Typical use</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>C11000</td><td>ETP · Electrolytic Tough Pitch</td><td>99.90%</td><td>Highest conductivity, the standard workhorse</td><td>Busbars, electrical, roofing, general</td></tr>
+            <tr><td>C10200</td><td>OF · Oxygen Free</td><td>99.95%</td><td>No oxygen, so it survives brazing and hydrogen atmospheres</td><td>Vacuum work, brazed assemblies, electronics</td></tr>
+            <tr><td>C12200</td><td>DHP · Phosphorus Deoxidised</td><td>99.90%</td><td>Welds and brazes well, slightly lower conductivity</td><td>Plumbing, heat exchangers, fabricated parts</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="mb-2 reveal">Brass grades</h3>
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr><th>Grade</th><th>Also called</th><th>Composition</th><th>Character</th><th>Typical use</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CuZn30</td><td>C26000 · Cartridge brass · 70/30</td><td>70% Cu / 30% Zn</td><td>Best formability of the brasses — deep draws without splitting</td><td>Deep-drawn parts, cartridge cases, vessels</td></tr>
+            <tr><td>CuZn37</td><td>C27200 · Yellow brass · 63/37</td><td>63% Cu / 37% Zn</td><td>General purpose; good balance of forming and strength</td><td>Hardware, pressings, general fabrication</td></tr>
+            <tr><td>CuZn40</td><td>C28000 · Muntz metal · 60/40</td><td>60% Cu / 40% Zn</td><td>Stronger and cheaper, but far less formable</td><td>Architectural, heavy sheet, condenser plate</td></tr>
+            <tr><td>C46400</td><td>Naval brass</td><td>~60% Cu / 39% Zn / 1% Sn</td><td>Tin addition resists dezincification in salt water</td><td>Marine fittings, valve stems, propeller shafts</td></tr>
+            <tr><td>Leaded brass</td><td>C35300 and similar</td><td>Cu / Zn / Pb</td><td>Lead makes it machine cleanly and chip freely</td><td>Machined components, screw-machine parts</td></tr>
+            <tr><td>Lead-free brass</td><td>Various low-Pb grades</td><td>Cu / Zn, Pb below limit</td><td>Meets potable water and food-contact limits</td><td>Drinking water fittings, sanitary ware, food equipment</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ TOLERANCES ══════════════════════ -->
+  <section class="section alt" id="tolerances">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tolerances</span>
+        <h2>What we hold, by product.</h2>
+        <p class="lede mt-1">
+          Tighter than standard is often possible — ask before assuming it is not.
+        </p>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr><th>Product</th><th>Thickness tolerance</th><th>Width / diameter tolerance</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Foil</td><td>± 0.002 – 0.005 mm</td><td>± 0.5 mm on width</td><td>Gauge measured continuously through the mill</td></tr>
+            <tr><td>Strip</td><td>± 0.01 – 0.03 mm</td><td>± 0.05 mm on width</td><td>Edge slit, deburred or rounded to order</td></tr>
+            <tr><td>Coil</td><td>± 0.01 – 0.03 mm</td><td>± 0.10 mm on width</td><td>Gauge held across the full coil length</td></tr>
+            <tr><td>Sheet</td><td>± 0.02 – 0.05 mm</td><td>± 1.0 mm on length &amp; width</td><td>Levelled flat; cut to your length</td></tr>
+            <tr><td>Circle</td><td>± 0.02 – 0.05 mm</td><td>± 0.50 mm on diameter</td><td>Burr-free edge, ready to press</td></tr>
+            <tr><td>Plate</td><td>± 0.10 – 0.30 mm</td><td>± 1.0 mm</td><td>Saw-cut or sheared; machining allowance on request</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid grid-3 mt-4">
+        <div class="card reveal">
+          <h3>Surface finish</h3>
+          <p class="mt-1">Mill finish, bright annealed, or polished on request. Say if the surface is
+             visible in the finished product — it changes how we handle and interleave it.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Edge condition</h3>
+          <p class="mt-1">Slit edge as standard. Deburred or rounded edge available where the
+             material feeds an automatic press or is handled by hand.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Packing</h3>
+          <p class="mt-1">Wooden pallets, coil cores, interleaving paper and edge protection —
+             specified to suit the transport distance and the surface requirement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ DENSITY ══════════════════════ -->
+  <section class="section" id="density">
+    <div class="container">
+      <div class="feature-row">
+        <div class="reveal">
+          <span class="eyebrow">Physical Properties</span>
+          <h2>Density &amp; conductivity reference.</h2>
+          <p class="lede mt-1">
+            The numbers our weight calculator uses. Handy when you are estimating
+            an order value against the day's metal rate.
+          </p>
+
+          <div class="table-wrap mt-3">
+            <table>
+              <thead>
+                <tr><th>Material</th><th>Density (g/cm³)</th><th>Conductivity (% IACS)</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Copper C11000 (ETP)</td><td>8.96</td><td>100</td></tr>
+                <tr><td>Copper C10200 (OF)</td><td>8.94</td><td>101</td></tr>
+                <tr><td>Copper C12200 (DHP)</td><td>8.94</td><td>85</td></tr>
+                <tr><td>Brass CuZn30 (70/30)</td><td>8.53</td><td>28</td></tr>
+                <tr><td>Brass CuZn37 (63/37)</td><td>8.44</td><td>27</td></tr>
+                <tr><td>Brass CuZn40 (Muntz)</td><td>8.39</td><td>28</td></tr>
+                <tr><td>Naval Brass C46400</td><td>8.41</td><td>26</td></tr>
+                <tr><td>Lead-Free Brass</td><td>8.45</td><td>26</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flex mt-3">
+            <a class="btn btn-primary" href="weight-calculator.html">Open Weight Calculator</a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="card">
+            <h3>Working out weight by hand</h3>
+            <p class="mt-2">
+              If you would rather do the arithmetic yourself, it is straightforward:
+            </p>
+            <div class="mt-2" style="background:var(--paper-warm); border-radius:var(--radius-sm); padding:18px; font-family:ui-monospace,'Cascadia Code',Consolas,monospace; font-size:.86rem; line-height:1.9">
+              Weight (kg) =<br />
+              &nbsp;&nbsp;Volume (cm³) × Density (g/cm³) ÷ 1000
+            </div>
+            <p class="mt-3 small muted"><b>Circle:</b> π × (diameter ÷ 2)² × thickness</p>
+            <p class="small muted"><b>Sheet:</b> length × width × thickness</p>
+            <p class="small muted"><b>Tube:</b> π × ((OD÷2)² − (ID÷2)²) × length</p>
+            <p class="mt-3 small">
+              Work in centimetres throughout, or convert from millimetres by dividing
+              the final volume by 1000.
+            </p>
+            <hr class="divider mt-3 mb-2" />
+            <p class="small muted">
+              <b>Worked example.</b> A copper circle 300 mm diameter × 0.8 mm thick:<br />
+              π × 15² × 0.08 = 56.55 cm³ → × 8.96 = <b>506.7 g</b> per piece.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ STANDARDS ══════════════════════ -->
+  <section class="section alt" id="standards">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Standards</span>
+        <h2>Specifications we work to.</h2>
+        <p class="lede mt-1">
+          If your drawing calls up a standard not listed here, send it over —
+          most are equivalent to something below.
+        </p>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr><th>Standard</th><th>Covers</th><th>Applies to</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IS 410</td><td>Copper and brass sheet, strip and circles for utensils and general use</td><td>Sheets, strips, circles</td></tr>
+            <tr><td>IS 1897</td><td>Copper strip for electrical purposes</td><td>Copper strip, coil, foil</td></tr>
+            <tr><td>IS 4413</td><td>Copper sheet and plate</td><td>Copper sheet, plate</td></tr>
+            <tr><td>IS 1972</td><td>Brass circles</td><td>Brass circles</td></tr>
+            <tr><td>ASTM B152</td><td>Copper sheet, strip, plate and rolled bar</td><td>All copper flat products</td></tr>
+            <tr><td>ASTM B36</td><td>Brass sheet, strip, plate and rolled bar</td><td>All brass flat products</td></tr>
+            <tr><td>ASTM B171</td><td>Copper-alloy plate for pressure vessels and condensers</td><td>Naval brass plate</td></tr>
+            <tr><td>BS EN 1652</td><td>Copper and copper alloys — plate, sheet, strip and circles for general purposes</td><td>All flat products</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note mt-4 reveal">
+        <span class="note-icon">✱</span>
+        <div>
+          <b>Verify before you order.</b> The figures on this page are typical for a copper and
+          brass rolling mill and are here so you can judge the site. Confirm the exact grade,
+          temper and tolerance with our sales team against your drawing before raising a
+          purchase order.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ CTA ══════════════════════ -->
+  <section class="section-tight" style="padding-bottom:92px">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Have a drawing to check against?</h2>
+          <p>Send the specification and we will confirm what we can hold before you commit to an order.</p>
+        </div>
+        <div class="flex">
+          <a class="btn btn-whatsapp btn-lg"
+             data-wa="Hello Aksa Metals, please confirm you can meet this specification:
+
+Grade:
+Thickness:
+Width / diameter:
+Temper:
+Standard: ">Check a Specification</a>
+          <a class="btn btn-ghost-light btn-lg" href="contact.html">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/assistant.js"></script>
+
+  <!-- Build the per-product specification tables from js/products-data.js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function tableFor(p) {
+        return (
+          '<div class="reveal" style="margin-bottom:38px">' +
+            '<div class="flex" style="justify-content:space-between; align-items:flex-end; margin-bottom:14px">' +
+              '<div>' +
+                '<span class="tag tag-inline tag-' + p.metal + '">' + p.family + '</span>' +
+                '<h3 style="margin-top:9px">' + p.name + '</h3>' +
+              '</div>' +
+              '<a class="link-arrow" href="product-' + p.slug + '.html">Product page</a>' +
+            '</div>' +
+            '<div class="table-wrap">' +
+              '<table>' +
+                '<thead><tr><th>Property</th><th>Specification</th></tr></thead>' +
+                '<tbody>' +
+                  p.specs.map(function (s) {
+                    return '<tr><td>' + s.label + '</td><td>' + s.value + '</td></tr>';
+                  }).join('') +
+                  '<tr><td>Grades</td><td>' + p.grades.join(' · ') + '</td></tr>' +
+                  '<tr><td>Tempers</td><td>' + p.tempers.join(' · ') + '</td></tr>' +
+                  '<tr><td>Standards</td><td>' + p.standards.join(' · ') + '</td></tr>' +
+                '</tbody>' +
+              '</table>' +
+            '</div>' +
+          '</div>'
+        );
+      }
+
+      var copper = document.getElementById("copperSpecTables");
+      var brass  = document.getElementById("brassSpecTables");
+      if (copper) copper.innerHTML = AKSA_PRODUCTS.filter(function (p) { return p.metal === "copper"; }).map(tableFor).join("");
+      if (brass)  brass.innerHTML  = AKSA_PRODUCTS.filter(function (p) { return p.metal === "brass";  }).map(tableFor).join("");
+
+      /* The reveal observer already ran, so show these straight away. */
+      document.querySelectorAll("#copperSpecTables .reveal, #brassSpecTables .reveal")
+        .forEach(function (el) { el.classList.add("shown"); });
+    });
+  </script>
+</body>
+</html>
