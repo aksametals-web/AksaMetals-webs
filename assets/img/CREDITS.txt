@@ -1,0 +1,64 @@
+AKSA METALS — PLACEHOLDER PHOTOGRAPHY
+=====================================
+
+Every image in this folder is a free stock photo from Pexels (pexels.com).
+
+LICENCE
+-------
+The Pexels Licence permits free commercial use and does NOT require
+attribution. You may legally keep these photos on your live website.
+
+Full licence: https://www.pexels.com/license/
+
+RECOMMENDATION
+--------------
+These are stand-ins so you can judge the layout. Photographs of your own
+Bidar plant, your own coils, circles and sheets, and your own team will
+convert far better than stock imagery. Buyers can tell the difference.
+
+HOW TO REPLACE
+--------------
+Drop your photo in this folder using the SAME filename and the site picks
+it up automatically. No code changes needed.
+
+Suggested sizes: hero images ~1800px wide, everything else ~1200-1500px wide.
+Save as JPEG, quality 80. Keep each file under about 500 KB so pages stay fast.
+
+FILE MAP  (filename  <-  Pexels photo ID)
+-----------------------------------------
+hero-copper-strip.jpg        5279344    Home page hero
+hero-copper-pipes.jpg        3721272    About page hero
+factory-floor.jpg           31352672    Infrastructure — press shop
+melting-pour.jpg             6804265    Manufacturing — melting & casting
+furnace-worker.jpg           3736102    Manufacturing — furnace
+rolling-mill.jpg             8973680    Manufacturing — rolling
+cutting-machine.jpg         36522038    Manufacturing — cut to length
+warehouse.jpg               36878025    Infrastructure — stockyard
+quality-check.jpg           32845674    Quality assurance
+inspection.jpg              35383622    Quality — inspection
+coil-yard.jpg               36397791    Infrastructure — coil storage
+steel-mill-glow.jpg          8803230    Company profile hero
+precision-parts.jpg         28752153    Quality — precision
+craftsman-copper.jpg        17462141    Applications — copperware
+craftsman-brass.jpg         37708534    Applications — brassware
+stock-yard.jpg              14838208    Products — range
+texture-copper.jpg          30644763    Decorative copper band
+texture-brass.jpg           30243820    Decorative brass band
+applications.jpg            34573722    End-use industries
+copper-vessel.jpg            2113127    Applications — utensils
+
+product-copper-circle.jpg   36522038
+product-copper-coil.jpg      8940223
+product-copper-sheet.jpg    35383621
+product-copper-strip.jpg     5279344
+product-copper-plate.jpg    30617011
+product-copper-foil.jpg      7405670
+product-brass-circle.jpg    37708534
+product-brass-coil.jpg      36397791
+product-brass-sheet.jpg     28752153
+product-brass-strip.jpg      4196955
+product-brass-plate.jpg     37441609
+product-brass-foil.jpg      30243820
+
+Source URL pattern:  https://www.pexels.com/photo/<ID>/
+Rebuild the whole set with:  bash tools/fetch-images.sh
